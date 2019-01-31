@@ -1,4 +1,4 @@
 .homeclass{
-    z-index: auto;
-    position: sticky;
+    z-index: 10;
+    position: inherit;
 }

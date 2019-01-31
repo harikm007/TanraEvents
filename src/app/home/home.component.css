@@ -1,6 +1,11 @@
 .homeclass{
-
+    position: absolute;
     opacity: 0.2;
-    z-index: 5;
+    
+}
+
+.slideimage{
+    width: 100px;
+    height: auto;
 }
 

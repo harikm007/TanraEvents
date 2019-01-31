@@ -1,41 +1,21 @@
-<div>
-  <mat-toolbar class="nav-class" id="navbar" >
-    <mat-toolbar-row>
-      <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
-        <mat-icon>menu</mat-icon>
-      </button>
-      <span>Tanra Events</span>
-      <span class="spacer"></span>
-      <div fxShow="true" fxHide.lt-md>
-        
-        <!-- The following menu items will be hidden on both SM and XS screen sizes -->
-        <a routerLink='./home' routerLinkActive='nav-highlight' mat-button matTooltip="Home" matTooltipClass="toolTip">
-          <mat-icon>home</mat-icon>
-        </a>
-        <span class="menu-spacer"></span>
-        <a routerLink='./services' routerLinkActive='nav-highlight' mat-button>Services</a>
-        <span class="menu-spacer"></span>
-        <a routerLink='./gallery' routerLinkActive='nav-highlight' mat-button>Gallery</a>
-        <span class="menu-spacer"></span>
-        <a routerLink='./contactus' routerLinkActive='nav-highlight' mat-button>Contact Us</a>
-      </div>
-      <span class="right-align"></span>
-      <a href="https://www.facebook.com/tanraevents" target="_blank" matTooltip="Facebook" mat-button>f</a>
-      <span class="spacer"></span>
-    </mat-toolbar-row>
-  </mat-toolbar>
 
-  <mat-sidenav-container fxFlexFill>
-    <mat-sidenav #sidenav>
-      <mat-nav-list class="nav-class-side">
-        <a (click)="sidenav.close()" mat-list-item></a>
-        <a routerLink='./home' (click)="sidenav.close()" mat-list-item>Home</a>
-        <a routerLink='./services' (click)="sidenav.close()" mat-list-item>Services</a>
-        <a routerLink='./gallery' (click)="sidenav.close()" mat-list-item>Gallery</a>
-        <a routerLink='./contactus' (click)="sidenav.close()" mat-list-item>Contact Us</a>
-      </mat-nav-list>
-    </mat-sidenav>
-  </mat-sidenav-container>
-</div>
+<nav class="navbar navbar-expand-md navbar-light nav-class" id="navbar">
+  <a class="navbar-brand" href="#">Tanra Events</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
 
-  
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active" data-toggle="collapse" data-target=".navbar-collapse.show">
+        <a class="nav-link" routerLink='./home' routerLinkActive='nav-highlight'>Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+        <a class="nav-link" routerLink='./gallery' routerLinkActive='nav-highlight'>Gallery</a>
+      </li>
+      <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+        <a class="nav-link" routerLink='./contactus' routerLinkActive='nav-highlight'>Contact Us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
