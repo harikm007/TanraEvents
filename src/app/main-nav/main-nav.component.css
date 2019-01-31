@@ -1,0 +1,44 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: fixed;
+  top: 0;
+}
+
+.nav-highlight{
+  color: red;
+}
+
+.right-align{
+  flex: 1 1 auto;
+}
+
+.spacer{
+  padding: 0 14px;
+}
+
+.menu-spacer{
+  padding: 0 24px;
+}
+
+.nav-class{
+  background: rgba(255, 255, 255, 0.2);
+  position: fixed;
+  z-index:10;
+}
+
+#navbar{
+    transition: 0.4s;
+}
+
+
